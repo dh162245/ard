@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+//font-family: 'Jost', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;    
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+header{
+    display: flex;
+    height: 70vh;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    gap: 3em;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+}
+
+.header-text{
+    text-align: center;
+    width: 60%;
+    h1{
+        font-family: 'Jost', sans-serif;
+        font-size: 4em;
+        font-weight: 800;
+        line-height: 1em;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        margin-top: 1em;
+    }
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2em;
+}
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: flex-end;
+    text-align: right;
+    h1{
+        font-family: 'Jost', sans-serif;
+        font-size: 3em;
+        font-weight: 800;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        margin-top: 2em;
+        font-weight: 200;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.section-text:nth-last-of-type(1){
+    text-align: left;
+}
+
+.section-img{
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    img{
+        width: 100%;
+    }
+}
+
+section:nth-of-type(1){
+    background: url('../img/planungBackground.jpg') center/cover no-repeat;
+    color: #000;
+}
+
+section:nth-of-type(2){
+    background: url('../img/beratungBackground.jpg') center/cover no-repeat;
+}
+
+section:nth-of-type(3){
+    background: url('../img/serviceBackground.jpg') center/cover no-repeat;
+}
+
+footer{
+    margin-top: 7em;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    h1{
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header{
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 7em;
+    }
+
+    .header-text{
+        width: 95%;
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+    section{
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2em;
+    }
+    .section-text{
+        width: 95%;
+        text-align: center;
+        align-items: center;
+        h1{
+            font-size: 2em;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+    .section-img{
+        width: 100%;
+    }
+  }
